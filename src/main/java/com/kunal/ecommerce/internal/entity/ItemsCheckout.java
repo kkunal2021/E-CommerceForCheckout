@@ -1,5 +1,6 @@
 package com.kunal.ecommerce.internal.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +21,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode
 @Entity
 @ToString
@@ -41,4 +43,9 @@ public class ItemsCheckout {
     @Column(name = "OFFER", length = 50)
     private String offer;
 
+    @Column(name = "QUANTITY", length = 50)
+    private int quantity;
+
+    public ItemsCheckout(String watchId, String watchName, BigDecimal unitPrice, int i, String offer) {
+    }
 }

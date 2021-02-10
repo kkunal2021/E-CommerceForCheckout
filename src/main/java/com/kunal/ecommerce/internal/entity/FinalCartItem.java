@@ -49,9 +49,15 @@ public class FinalCartItem {
     @Id
     private String watchId;
 
-    @Column(name = "OFFER", length = 50)
-    private String offer;
+    @Column(name = "WATCH_NAME", length = 50)
+    private String watchName;
 
     @Column(name = "WATCH_UNIT_PRICE", length = 50)
     private BigDecimal unitPrice;
+
+    @Column(name = "DISCOUNT", length = 50)
+    private int discount;
+
+    @Column(name = "OFFER", length = 50)
+    private String offer;
 }
