@@ -45,3 +45,5 @@ Please refer to the test packages under the source code
 
 [Test-Driven Development, Build Automation (with Java 8 and Intellij Idea Ultimate)](https://github.com/kkunal2021/E-CommerceForCheckout)
 
+# Postman Collection
+The Postman Collection is provided under the project root directory with a folder name postmanCollection which can be imported for reference.
