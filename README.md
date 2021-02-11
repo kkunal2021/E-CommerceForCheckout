@@ -34,7 +34,13 @@ The application provides the features of checkout where it calculates the list o
 # Accessing the application
 The application is accessible at http://localhost:8080/checkout/ and at also other endpoints as defined in the Controller classes.
 
-For instance - http://localhost:8080/checkout/itemsList?items=
+For instance - 1. http://localhost:8080/checkout/itemsList?items=
+               2. http://localhost:8080/product/addProducts
+               3. http://localhost:8080/product/listProducts
+               4. http://localhost:8080/offer/addOffers
+               5. http://localhost:8080/offer/listOffers
+               6. http://localhost:8080/checkout/itemsList?items=Rolex,Michael Kors,Swatch,Casio
+               
 
 # Unit Testing with Spring, JUnit and Mockito
 The application built has been tested with the Junit 5 and Mockito Framework.
