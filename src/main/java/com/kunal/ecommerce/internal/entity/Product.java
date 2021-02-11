@@ -9,6 +9,8 @@ import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigDecimal;
@@ -29,6 +31,7 @@ import java.math.BigDecimal;
 public class Product {
 
     @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private String watchId;
 
     @Column(name = "WATCH_NAME", length = 50)

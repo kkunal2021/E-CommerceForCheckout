@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "ca4be77b-b68a-4cb5-bb25-b3a528676ecb",
+		"name": "Watch Catalogue APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProductCheckout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checkout/itemsList?items=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkout",
+						"itemsList"
+					],
+					"query": [
+						{
+							"key": "items",
+							"value": ""
+						}
+					]
+				},
+				"description": "http://localhost:8080/checkout/itemsList?items="
+			},
+			"response": []
+		},
+		{
+			"name": "ProductCheckouts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checkout/itemsList?items=Rolex,Michael Kors,Swatch,Casio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkout",
+						"itemsList"
+					],
+					"query": [
+						{
+							"key": "items",
+							"value": "Rolex,Michael Kors,Swatch,Casio"
+						}
+					]
+				},
+				"description": "http://localhost:8080/checkout/itemsList?items=Rolex,Michael Kors,Swatch,Casio"
+			},
+			"response": []
+		},
+		{
+			"name": "Product - addProducts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"watchName\": \"Rolex\",\n\t\"offer\": 0,\n    \"unitPrice\": 100,\n    \"discount\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/addProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"addProducts"
+					]
+				},
+				"description": "http://localhost:8080/product/addProducts"
+			},
+			"response": []
+		},
+		{
+			"name": "Product - listProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts"
+					]
+				},
+				"description": "http://localhost:8080/product/listProducts"
+			},
+			"response": []
+		},
+		{
+			"name": "Offer - listOffers for Watches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/offer/listOffers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer",
+						"listOffers"
+					]
+				},
+				"description": "http://localhost:8080/offer/listOffers"
+			},
+			"response": []
+		},
+		{
+			"name": "Offer - addOffers for Watches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\": \"Rolex\",\n\t\"couponThreshold\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/offer/addOffers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offer",
+						"addOffers"
+					]
+				},
+				"description": "http://localhost:8080/offer/addOffers"
+			},
+			"response": []
+		}
+	]
+}

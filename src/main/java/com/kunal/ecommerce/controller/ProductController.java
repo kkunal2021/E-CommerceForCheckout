@@ -58,7 +58,7 @@ public class ProductController {
 
     @PostMapping(value = "/addProducts", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Product> updateProduct(@RequestBody Product product) {
-        product.setWatchName(product.getWatchName().toLowerCase());
+        product.setWatchName(product.getWatchName());
         productRepository.save(product);
         return productRepository.findAll();
     }
