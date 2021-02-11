@@ -32,18 +32,14 @@ The application provides RESTful API micro-services to add , fetch and delete it
 The application provides the features of checkout where it calculates the list of watch items put in the cart and outputs the total cost.
 
 # Accessing the application
-the application is accessible at http://localhost:8080/checkout/ and at also other endpoints as defined in the Controller classes.
+The application is accessible at http://localhost:8080/checkout/ and at also other endpoints as defined in the Controller classes.
 
 For instance - http://localhost:8080/checkout/itemsList?items=
 
 # Unit Testing with Spring, JUnit and Mockito
-Spring Boot is the most popular framework to develop RESTful Services. It has awesome unit testing capabilities through Spring Boot Starter Test. Mockito is the most popular mocking framework. JUnit is most popular Java Unit Testing Framework.
-
 The application built has been tested with the Junit 5 and Mockito Framework.
 
-Please refer to the test packages under the source code
-
-[Test-Driven Development, Build Automation (with Java 8 and Intellij Idea Ultimate)](https://github.com/kkunal2021/E-CommerceForCheckout)
+Please refer to the test packages under the source code.
 
 # Postman Collection
 The Postman Collection is provided under the project root directory with a folder name postmanCollection which can be imported for reference.
